@@ -1,0 +1,5 @@
+name<-readline(prompt="enter your name:")
+age<-as.numeric(readline(prompt="enter your age:"))
+cat("name:",name,"\n")
+cat("age:",age,"\n")
+cat("R installation:",R.version.string,"\n")
