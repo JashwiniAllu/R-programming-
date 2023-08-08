@@ -1,0 +1,15 @@
+
+printObjectDetails <- function(obj) {
+  cat("Object Name:", obj, "\n")
+  cat("Object Class:", class(get(obj)), "\n")
+  cat("Object Type:", typeof(get(obj)), "\n")
+  cat("Object Size:", object.size(get(obj)), "bytes\n")
+  cat("\n")
+}
+x <- 1:10
+y <- "Hello, world!"
+z <- data.frame(a = 1:5, b = letters[1:5])
+objects <- ls()
+for (obj in objects) {
+  printObjectDetails(obj)
+}
