@@ -1,0 +1,16 @@
+get_primes_up_to_n <- function(n) {
+  is_prime <- rep(TRUE, n + 1)
+  is_prime[1] <- FALSE
+  for (i in 2:sqrt(n)) {
+    if (is_prime[i]) {
+      for (j in i^2:n) {
+        is_prime[j] <- FALSE
+      }
+    }
+  }
+  primes <- which(is_prime)
+  return(primes - 1)  
+}
+n <- 50
+prime_numbers <- get_primes_up_to_n(n)
+print(paste("Prime numbers up to", n, "are:", prime_numbers))
