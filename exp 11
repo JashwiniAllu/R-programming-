@@ -1,0 +1,10 @@
+str1 = " The Old man house Is far away"
+print("Original vector(string)")
+print(str1)
+print("Unique elements of the said vector:")
+print(unique(tolower(str1)))
+nums = c(1, 2, 2, 3, 4, 9, 8, 9)
+print("Original vector(number)")
+print(nums)
+print("Unique elements of the said vector:")
+print(unique(nums))
