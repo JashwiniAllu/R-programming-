@@ -1,0 +1,6 @@
+a <- c(1,4,6)
+b <- c(4,5,2)
+c <- c(9,8,9)    
+m<-cbind(a,b,c)
+print("Content of the said matrix:")
+print (m)
